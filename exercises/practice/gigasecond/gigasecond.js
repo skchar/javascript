@@ -3,6 +3,9 @@
 // convenience to get you started writing code faster.
 //
 
-export const gigasecond = () => {
-  throw new Error('Remove this statement and implement this function');
-};
+function gigasecond(date) {
+  return new Date(date.getTime() + 10 ** 9 * 1000);
+}
+
+const date = new Date("2000-01-01");
+console.log(gigasecond(date));
